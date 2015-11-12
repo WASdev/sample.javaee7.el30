@@ -71,7 +71,7 @@ public class Employee {
     public String sanitizeNames(LambdaExpression expression) {
 
         System.out.println("expression: " + expression);
-        ELProcessor elp = new ELProcessor();
+        //ELProcessor elp = new ELProcessor();
         Boolean result = (Boolean) expression.invoke(this);
         System.out.println(" RESULT: " + result.toString());
 
