@@ -1,6 +1,5 @@
 package com.ibm.ws.samples.el30;
 
-import javax.el.ELProcessor;
 import javax.el.LambdaExpression;
 
 public class Employee {
