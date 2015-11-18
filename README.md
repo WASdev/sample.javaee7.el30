@@ -38,7 +38,7 @@ Use the following steps to run the application with Maven:
     $ mvn clean install
     ```
 
-2. To run the server with the WebSocket application execute:
+2. To run the server with the EL 3.0 application execute:
     ```bash
     $ mvn liberty:run-server
     ```
