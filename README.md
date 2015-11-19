@@ -50,3 +50,6 @@ Once the server is running, the application will be available under [http://loca
 Click the button below to deploy your own copy of this application to [Bluemix](https://bluemix.net).
 
 [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/WASdev/sample.javaee7.el30)
+
+Once the application is deployed and running in Bluemix, it will be available under 
+[http://MYAPPNAME.mybluemix.net/sample.javaee7.servlet.el30/](http://MYAPPNAME.mybluemix.net/sample.javaee7.servlet.el30/).
