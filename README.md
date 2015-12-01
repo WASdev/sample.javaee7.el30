@@ -17,6 +17,7 @@ In addition, it provides a simple sample of a stand-alone servlet that shows EL 
 
 Browse the code to see what it does, or build and run it yourself!
 
+NOTE: This sample uses Lambda expressions introduced by Java 8, this requires java 8 to be installed in your environment to successfully run the sample.
 
 ## Running in Eclipse
 
