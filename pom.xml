@@ -65,12 +65,16 @@
                     <bootstrapProperties>
                         <appLocation>../../../../../${project.build.finalName}</appLocation>
                     </bootstrapProperties>
+                <install>
+                        <type>javaee7</type>
+                </install>
                 </configuration>
             </plugin>
         </plugins>
 
     </build>
 
+                
     <dependencyManagement>
     	<dependencies>
     		<dependency>
