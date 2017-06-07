@@ -25,6 +25,14 @@ Browse the code to see what it does, or build and run it yourself!
 4. Right click on the project and select *Run As -> Run on Server* option. Find and select the Liberty profile server and press *Finish*.
 5. Go to: [http://localhost:9080/sample.javaee7.el30/](http://localhost:9080/sample.javaee7.el30/)
 
+### Tips
+After step 3, Eclipse may detect JSP EL (Expression Language) syntax errors.  You can ignore these
+errors and disable the JSP validator for this project. To disable JSP validation in Eclipse: 
+1. Right-click the project and select *Properites -> Validation*.
+2. Check the *Enable project specific settings* checkbox.
+3. Uncheck the *JSP syntax validator* checkboxes. 
+3. Click *OK*.
+
 ## Running with Maven
 
 This project can be built with [Apache Maven](http://maven.apache.org/). The project uses [Liberty Maven Plug-in](https://github.com/WASdev/ci.maven) to automatically download and install Liberty profile runtime from the [Liberty repository](https://developer.ibm.com/wasdev/downloads/). Liberty Maven Plug-in is also used to create, configure, and run the application on the Liberty server. 
