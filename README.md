@@ -1,6 +1,6 @@
   
   
-# Sample Java EE 7 - Expression Language 3.0
+# Sample Java EE 7 - Expression Language 3.0 [![Build Status](https://travis-ci.org/WASdev/sample.javaee7.el30.svg?branch=master)](https://travis-ci.org/WASdev/sample.javaee7.el30)
 
 
 This application shows how to use some of the new EL 3.0 (Expression Language) functions. 
