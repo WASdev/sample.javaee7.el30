@@ -73,7 +73,7 @@ Use the following steps to run the application with Gradle:
 
 2. To start the server with the Servlet sample execute:
     ```bash
-    $ gradle libertyStart
+    $ ./gradlew libertyStart
     ```
 
     Alternatively, execute the run command:
