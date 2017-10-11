@@ -9,7 +9,7 @@ description = "Sample Java EE 7 - Expression Language 3.0"
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 tasks.withType(JavaCompile) {
-	options.encoding = 'UTF-8'
+    options.encoding = 'UTF-8'
 }
 
 buildscript {
@@ -43,22 +43,22 @@ ext {
 }
 
 war {
-	archiveName = baseName + '.' + extension
+    archiveName = baseName + '.' + extension
 }
 
 liberty {
     server{
         configFile = file("src/main/wlp/server.xml")
-		bootstrapProperties = ['appLocation': "${war.baseName}"]
+        bootstrapProperties = ['appLocation': "${war.baseName}"]
         name = 'LibertyProjectServer'
         apps = [war]
      }
 }
 
 dependencies {
-		providedCompile group: 'org.apache.geronimo.specs', name: 'geronimo-servlet_3.0_spec', version:'1.0'
-		providedCompile group: 'javax.el', name: 'javax.el-api', version:'3.0.0'
-		libertyRuntime group: 'com.ibm.websphere.appserver.runtime', name: 'wlp-webProfile7', version: '17.0.0.2'
+    providedCompile group: 'org.apache.geronimo.specs', name: 'geronimo-servlet_3.0_spec', version:'1.0'
+    providedCompile group: 'javax.el', name: 'javax.el-api', version:'3.0.0'
+    libertyRuntime group: 'com.ibm.websphere.appserver.runtime', name: 'wlp-webProfile7', version: '17.0.0.2'
 }
 
 test {
