@@ -18,12 +18,21 @@ In addition, it provides a simple sample of a stand-alone servlet that shows EL 
 Browse the code to see what it does, or build and run it yourself!
 
 ## Running in Eclipse
+### Maven
 
 1. Download and install [Eclipse with the WebSphere Developer Tools](https://developer.ibm.com/wasdev/downloads/liberty-profile-using-eclipse/).
 2. Clone this repository.
 3. Import the sample into Eclipse using *File -> Import -> Maven -> Existing Maven Projects* option.
 4. Right click on the project and select *Run As -> Run on Server* option. Find and select the Liberty profile server and press *Finish*.
 5. Go to: [http://localhost:9080/sample.javaee7.el30/](http://localhost:9080/sample.javaee7.el30/)
+
+### Gradle
+1. Go to *Help > Eclipse Marketplace > Install Buildship Gradle Integration 2.0*
+2. Clone this project and import into Eclipse as an 'Existing Gradle Project'.
+3. Go to *Window > Show View > Other > Gradle Executions & Gradle Tasks*
+4. Go to Gradle Tasks view and run `clean` in build folder, then `build` in build folder, then `libertyStart` in liberty folder.
+5. You should see the following in the console: `Application sample.javaee7.el30 started in XX.XX seconds.`
+6. Go to: [http://localhost:9080/sample.javaee7.el30/](http://localhost:9080/sample.javaee7.el30/)
 
 ### Tips
 After step 3, Eclipse may detect JSP EL (Expression Language) syntax errors.  You can ignore these
@@ -33,7 +42,8 @@ errors and disable the JSP validator for this project. To disable JSP validation
 3. Uncheck the *JSP syntax validator* checkboxes.
 3. Click *OK*.
 
-## Running with Maven
+## Running in the Command Line
+### Maven
 
 This project can be built with [Apache Maven](http://maven.apache.org/). The project uses [Liberty Maven Plug-in] to automatically download and install Liberty profile runtime from the [Liberty repository](https://developer.ibm.com/wasdev/downloads/). Liberty Maven Plug-in is also used to create, configure, and run the application on the Liberty server.
 
@@ -50,15 +60,6 @@ Use the following steps to run the application with Maven:
     ```
 
 Once the server is running, the application will be available under [http://localhost:9080/sample.javaee7.el30/](http://localhost:9080/sample.javaee7.el30/).
-
-## Deploying to Bluemix
-
-Click the button below to deploy your own copy of this application to [Bluemix](https://bluemix.net).
-
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/WASdev/sample.javaee7.el30)
-
-Once the application is deployed and running in Bluemix, it will be available under
-[http://MYAPPNAME.mybluemix.net/sample.javaee7.el30/](http://MYAPPNAME.mybluemix.net/sample.javaee7.el30/).
 
 ## Running with Gradle
 
@@ -89,6 +90,15 @@ Once the server has started, the application will be available under [http://loc
     ```  
 
 Please refer to the [ci.gradle] repository for documentation about using the Liberty Gradle Plug-in.
+
+## Deploying to Bluemix
+
+Click the button below to deploy your own copy of this application to [Bluemix](https://bluemix.net).
+
+[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/WASdev/sample.javaee7.el30)
+
+Once the application is deployed and running in Bluemix, it will be available under
+[http://MYAPPNAME.mybluemix.net/sample.javaee7.el30/](http://MYAPPNAME.mybluemix.net/sample.javaee7.el30/).
 
 ## Notice
 
